@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Atypical</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Css.css">
+</head> 
+
+<body>
+	<header>
+		<a href="#" class="icono" onclick="MiFuncion();"> <i class="fa fa-bars"></i></a>
+		<a href="index.html"><img src="Logo final aty.jpeg" class="logo"></a>
+		<nav id="navegador" class=" ">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Productos.html">Productos</a></li>
+			<li><a href="Informacion de marca.html">Informacion de la marca</a></li>
+			<li><a href="Informacion de la fundadora.html">Informacion de la fundadora</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+	</header>
+	
+	 <main>
+        <section class="brand-info">
+            <h2>Fundadora: Miranda Castro</h2>
+			<img src="Captura de pantalla 2024-09-18 091005.png" class="fotoperfil">
+			<div class="textomiru">
+            <p><img src="Captura de pantalla 2024-09-18 091005.png" class="fotoperfil">Miranda es estudiante de diseño grafico en la UBA al dia de hoy 2024. Es una modelo apacionada por la moda que busca innovar a la hora de expresarse a traves de sus prendas. Siempre estuvo interesada en darle una vuelta de rosca a todo lo que encuentra en su placard. Su originalidad la caracteriza al igual que a su marca.    </p>
+				</div>
+        </section>
+    </main>
+	
+	<footer>
+  	<div class="footer-container">
+    <div class="footer-section">
+		
+	
+    <div class="footer-section">
+      <h4>Seguinos</h4>
+      <a href="https://www.instagram.com/at.ypical?igsh=MWcwazVzcDZiZ3kxNg=="> <p><i class="fa fa-instagram" aria-hidden="true"></i></p></a>
+    </div>
+    <div class="footer-section">
+      <p>© Atypical - Todos los derechos reservados</p>
+    </div>
+  </div>
+	</footer>
+	
+	<script> 
+		function MiFuncion() {
+     	var x = document.getElementById("navegador");
+			if (x.className === " ") {
+			x.className += "responsive";
+     } else {
+       x.className = " ";
+     }
+   }
+	</script>
+	
+	
+</body>
+</html>
