@@ -38,6 +38,7 @@ nav ul {
     padding: 5;
     margin: 5;
 	text-align: center;
+	color: black
 }
 nav ul li {
     display: inline-block; 
@@ -53,7 +54,7 @@ nav ul li a {
     text-align: center;
 }
 nav {height: 0; overflow: hidden; align-content: center}
-.responsive {height: 20vh; transition: all 0.7s;}
+.responsive {height: 30vh; transition: all 0.7s;}
 
 footer {
   background-color: #333;
@@ -123,8 +124,54 @@ flex-direction: column;
   color: #ddd;
 }
 
-.anuncio {max-width: 300px x 600px; width: 100%; height: 100%; object-fit: cover;}
-.anuncio {max-width: 728px x 90px; width: 100%; height: 100%; object-fit: cover;}
+
+.anuncio {
+	width: 300px;
+	height: 600px;
+	object-fit: cover;
+	justify-content: center;
+}
+
+.slider {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+	max-height: 100vh;
+	 z-index: 0;
+	overflow: hidden
+}
+
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border: none;
+  background-color: #1C1B1B;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+	right: 10px
+}
+
+.formulario { text-align: center;}
+.brand-info { text-align: center}
+.icono {color: black}
 
 @media(min-width:1024px){
     nav {display:block; height: auto}
@@ -142,11 +189,25 @@ flex-direction: column;
 	.fotoperfil {width: 10%; padding-left: 40px}
 	.pant {width: 400px}
 	.lighte {width: 400px}
-	.textomiru {width: 90%; padding-left: 40px}
+	.textomiru {width: 90%; padding-left: 50px; text-align: center}
 	.cajacontenedora {display: flex; flex-flow: wrap; text-align: center; padding: 20px}
-	.cajacontenedora div {padding: 20px}
+	.cajacontenedora div {padding: 30px}
+	.formulario {width: 60px; padding-left: 680px; color: whitesmoke}
+	.marcainfo {text-align: justify-all}
+	.enviar {text-align: right ; align-content: center}
+	.icono {color: black}
 	
 	
+	.slider {
+    width: 40%;
+    max-width: 500px;}
+	
+	.anuncio {
+	width: 728px;
+	height: 90px;
+	object-fit: cover;
+	justify-content: center;
+	}
 	
 	.cajacon {display: flex; flex-flow: wrap; text-align: center; justify-content: center}
 	.cajacon div { 
@@ -158,4 +219,5 @@ padding: 10px;
 	@media(min-width:1024px){
 		.footer-section {width: 100%}
 	}
+
 	

@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<a href="#" class="icono" onclick="MiFuncion();"> <i class="fa fa-bars"></i></a>
-		<a href="index.html"><img src="Logo final aty.jpeg" class="logo"></a>
+		<a href="index.html"><img src="ima/Logo final aty.jpeg" class="logo"></a>
 		<nav id="navegador" class=" ">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -29,12 +29,14 @@
         <section class="brand-info">
             <h2>Contactanos</h2>
             <p>Queremos ayudarte con tus dudas </p>
-			<form method="post" action="respuesta.html">
+			<p></p>
+			
+			<form method="post" action="respuesta.html" class="formulario">
             <p><strong>Nombre:</strong>
-				<input type="text" name="Nombre" required placeholder=" Nombre y apellido/s"> </p>
+				<input type="text" name="Nombre" required placeholder=" Nombre y apellido/s" > </p>
 				
 				<p><strong>Mail:</strong>
-				<input type="email" name="email" required placeholder="Correo electronico"> </p>
+				<input type="email" name="email" required placeholder="Correo electronico" > </p>
 				
 				<p><strong>Pais:</strong>
 					<select name="Pais">
@@ -44,11 +46,19 @@
 						<option value= "CHI">Chile</option>
 						<option value= "COL">Colombia</option>
 						<option value= "ECU">Ecuador</option>
+						</select>
 						</p>
-						
-				 <p><strong>Duda:</strong>
-				<input type="text" name="Duda" required placeholder="Dejanos tu duda o comentario"> </p>
-						
+					
+	
+				<p><strong>Duda:</strong>
+				<textarea type="duda o comentario" name="mensaje" rows= "6"></textarea>
+						 </p>
+						<br>
+				<br>
+				
+				<p> <input type="submit" name= "enviar" required placeholder="ENVIAR" class="enviar"></p>
+				<br>
+				<br>
 				  </form>
 			
 				  

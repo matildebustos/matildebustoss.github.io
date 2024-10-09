@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<a href="#" class="icono" onclick="MiFuncion();"> <i class="fa fa-bars"></i></a>
-		<a href="index.html"><img src="Logo final aty.jpeg" class="logo"></a>
+		<a href="index.html"><img src="ima/Logo final aty.jpeg" class="logo"></a>
 		<nav id="navegador" class=" ">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -25,13 +25,80 @@
       </nav>
 	</header>
 	
+<br>
 	 <main>
+		 <div class="slider">
+        <div class="slides">
+          <img src="ima/slid1.jpg"  alt="Slide 1" class= "slide1"/>
+       
+          <img src="ima/slid2.jpg"  alt="Slide 2" class= "slide1"/>
+        
+          <img src="ima/slid3.jpg"  alt="Slide 3" class= "slide1"/>
+        
+        
+          <img src="ima/slid4.jpg"  alt="Slide 4" class= "slide1"/>
+        
+          
+			
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+		 
+		 <script>
+			var slideIndex = 1;
+    showDivs(slideIndex);
+ 
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+ 
+    function showDivs(n) {
+        var i;
+ 
+        var x = document.getElementsByClassName("slide1");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+ 
+    carousel();
+ 
+    function carousel() {
+ 
+    var i;
+ 
+    var x = document.getElementsByClassName("slide1");
+ 
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+ 
+    slideIndex++;
+ 
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+ 
+    setTimeout(carousel, 2000); 
+ 
+    }
+  		</script>
+		 
         <section class="marcainfo">
 			<div class="marcainfo">
             <h2>Información de la Marca</h2>
-            <p>            Atypical es una marca innovadora dedicada a ofrecer moda exclusiva y de alta calidad. Nuestra misión es proporcionar a nuestros clientes prendas que se destaquen por su originalidad y diseño. Buscamos dar una seguna vida a esas prendas que no nos gustan, se rompieron, nos quedan chicas o simplemento nos aburrimos de usar. La intervencion da de esas prenda una nueva y unica. </p>
-			<p> </p>
-			<p>Nuestros principios son la originalidad y el recilaje, es por esto que al ver como cada vez que una prenda en especifico se ponde de moda todos lo compran, se visten iguales por un timpo, y cuando pasa de moda lo descartan, decidimos q nuestras prendas no solo serian con reciclaje de ropa sino que totalemente unicas. Podremos hacer dos ediciones similares de una misma prenda, pero nunca iguales. Cada prenda tiene su escencia y esta destinada a ser un objeto de exprecion de quien lo use, es por eso que creemos que es sumamente importante que represente a solo una persona. </p>
+            <p>            Atypical es una marca innovadora dedicada a ofrecer moda exclusiva y de alta calidad. Nuestra misión es proporcionar a nuestros clientes prendas que se destaquen por su originalidad y diseño. Buscamos dar una segunda vida a esas prendas que no nos gustan, se rompieron, nos quedan chicas o simplemente nos aburrimos de usar.mLa intervención da de esas prenda una nueva y única.   </p>
+			<br>
+			<p>Nuestros principios son la originalidad y el reciclaje, es por esto que al ver como cada vez que una prenda en especifico se pone de moda todos lo compran, se visten iguales por un tiempo, y cuando pasa de moda lo descartan, decidimos q nuestras prendas no solo serian con reciclaje de ropa sino que totalmente únicas. Podremos hacer dos ediciones similares de una misma prenda, pero nunca iguales. Cada prenda tiene su esencia y esta destinada a ser un objeto de expresión de quien lo use, es por eso que creemos que es sumamente importante que represente a solo una persona.  </p>
+			<br>
+			<p>Atypical nació de una investigación donde pudimos ver el exceso de descarte de tela en fabricas, los desiertos como el de Atacama donde hay millones de prendas arrojadas y muchos otros ejemplos que para amantes de la moda son dolorosos de ver. Sobre esa experiencia se decidió buscar una solución. ¿Que podíamos hacer para que al menos nuestros propios retazos y ropa vieja no termine en la basura? Darle una segunda vida. Así fue como se comenzó por lo propio, y al ver el interés que generaba comenzamos a crear mas prendas así todos podían encontrar la que los identificaba </p>
+			<br>
+			<p>El día de hoy conseguimos nuestro principal objetivo ademas del reciclaje, dar un 100% de originalidad desde las prendas, la estética de nuestras paginas y la de nuestras producciones. Todo esto no solo nos representa a nosotras sino también a quienes lo elijen y usan.</p>
+			<br>
+				
 			</div>
         </section>
 			
