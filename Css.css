@@ -178,19 +178,19 @@ flex-direction: column;
 	.icono {display: none}
 	.icono {width: 200px}
 	
-	.Prodpantalon {width: 220px}
+	.Prodpantalon {width: 220px; height: 300px}
 	.brand-info { text-align: center}
 	.brand-info p { text-align: center}
 	.marcainfo {width: 90%; padding-left: 60px; padding-right: 60px}
-	.Prodpollera {width: 220px}
-	.bermudas {width: 220px}
-	.lightening {width: 220px}
-	.remera {width: 220px}
+	.Prodpollera {width: 220px; height: 300px}
+	.bermudas {width: 220px; height: 300px}
+	.lightening {width: 220px; height: 300px}
+	.remera {width: 220px ; height: 300px}
 	.fotoperfil {width: 10%; padding-left: 40px}
 	.pant {width: 400px}
 	.lighte {width: 400px}
 	.textomiru {width: 90%; padding-left: 50px; text-align: center}
-	.cajacontenedora {display: flex; flex-flow: wrap; text-align: center; padding: 20px}
+	.cajacontenedora {display: flex; flex-flow: wrap; justify-content: center; padding: 20px}
 	.cajacontenedora div {padding: 30px}
 	.formulario {width: 60px; padding-left: 680px; color: whitesmoke}
 	.marcainfo {text-align: justify-all}
@@ -214,10 +214,10 @@ flex-direction: column;
 		width: 33.3%; 
 padding: 10px; 
 		box-sizing: border-box}
-	.cajacon div img {width: 100%}
+	.cajacon div img {width: 500px ; height: 600px}
 }
 	@media(min-width:1024px){
 		.footer-section {width: 100%}
 	}
-
-	
+@media(min-width: 767px)
+	}
