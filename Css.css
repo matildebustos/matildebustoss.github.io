@@ -181,6 +181,9 @@ flex-direction: column;
 .lighte {width: 85%}
 
 
+.link {color: white;}
+
+
 @media(min-width:768px){
     nav {display:block; height: auto}
 	.icono {display: none}
