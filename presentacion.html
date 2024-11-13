@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+
+  <meta charset="utf-8" />
+
+  <title>Presentacion </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+
+   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+
+   rel="stylesheet"
+
+  />
+
+
+
+  <style>
+
+   * {
+
+    margin: 0;
+
+    padding: 0;
+
+   }
+
+   html {
+
+    scroll-behavior: smooth;
+
+   }
+
+   body {
+
+    color: #FFFCFC;
+
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
+
+    text-align: center;
+	   background: #000000
+
+   }
+	 
+
+   .presentacion {
+
+    position: relative;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+   }
+
+
+
+   .diapositiva {
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+    opacity: 0;
+
+    z-index: 0;
+
+   }
+
+   .activa {
+
+    opacity: 1;
+
+   }
+
+   .contenedor {
+
+    max-width: 800px;
+
+    width: 90%;
+
+    padding: 30px;
+
+    background-color: #3A3A3A;
+
+    border-radius: 40px;
+
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+    margin: 20px;
+
+   }
+
+   .contenedor h1,
+
+   .contenedor h2 {
+
+    margin: 10px 0;
+
+    color: #FCF8F8;
+
+   }
+
+   .contenedor h2 {
+
+    font-size: 1.2em;
+
+    color: #666;
+
+   }
+
+   .cajatitulo h1 {
+
+    font-size: 2.5em;
+
+    color: #FFFDFD;
+
+   }
+
+   .cajatitulo h2 {
+
+    font-size: 1.5em;
+
+    color: #252424;
+
+   }
+
+   .paleta {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin-top: 20px;
+
+   }
+
+   .color-circle {
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 50%;
+
+   }
+
+   .color-primary {
+
+    background-color: #FCF9F9;
+
+   }
+
+   .color-white {
+
+    background-color: #3A3A3A;
+
+    border: 2px solid #FCFBFB;
+
+   }
+
+   #anterior,
+
+   #siguiente {
+
+    z-index: 10;
+
+    display: inline-block;
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #3A3A3A;
+
+    background-color: #FDFCFB;
+
+    border-radius: 20px;
+
+    padding: 10px 20px;
+
+    font-family: "Poppins", sans-serif;
+
+    text-decoration: none;
+
+    font-size: 1.2em;
+
+   }
+
+   #anterior {
+
+    left: 10px;
+
+   }
+
+   #siguiente {
+
+    right: 10px;
+
+   }
+
+   .color {
+
+    margin: 10px;
+
+   }
+
+   nav ul li a {
+
+    border: 1px solid #FFFDFD;
+
+    color: #FBF9F9;
+
+    padding: 6px;
+
+    text-decoration: none;
+
+    display: block;
+
+   }
+
+
+
+   /* Adaptación para pantallas móviles */
+
+   @media only screen and (max-width: 600px) {
+
+    .contenedor h1 {
+
+     font-size: 1.6em;
+
+    }
+
+    .contenedor h2 {
+
+     font-size: 1em;
+
+    }
+
+    .cajatitulo h1 {
+
+     font-size: 2em;
+
+    }
+
+    .cajatitulo h2 {
+
+     font-size: 1.3em;
+
+    }
+
+    img {
+
+     width: 100%;
+
+     max-width: 100%;
+
+     height: auto;
+
+     margin: 20px 0;
+
+     justify-content: center;
+
+    }
+
+    .contenedor {
+
+     width: 100%;
+
+     padding: 15px;
+
+     margin: 10px 0;
+
+     justify-content: center;
+
+    }
+
+    .paleta {
+
+     margin-top: 15px;
+
+    }
+
+    .color-circle {
+
+     width: 60px;
+
+     height: 60px;
+
+     margin: 1px;
+
+    }
+
+    #anterior,
+
+    #siguiente {
+
+     padding: 8px 16px;
+
+     font-size: 1em;
+
+     background-color: #db0080;
+
+     color: white;
+
+     border-radius: 20px;
+
+    }
+
+   }
+
+  </style>
+
+ </head>
+
+
+
+
+
+ <body class="Presentacion">
+
+  <a href="#" id="anterior"> < </a>
+
+  <a href="#" id="siguiente"> > </a>
+
+
+
+  <div class="diapositiva activa">
+
+
+    <img
+
+     style="width: 250px; margin: 40px"
+
+     src="ima/at logo.jpeg"
+
+    />
+
+   <div class="cajatitulo">
+
+    <h2>MATERIALES Y PROCESOS I</h2>
+
+    <h2>CATEDRA ZAVALA</h2>
+
+    <h2>MATILDE BUSTOS</h2>
+
+   </div>
+
+  </div>
+
+
+
+  <div class="diapositiva">
+
+   <div class="contenedor">
+
+    <h1>Proceso de desarrollo </h1>
+
+    <h2>
+    Cree una idea mental antes que nada que me dio una idea de lo que yo creía necesario para comprender y elegir mejor nuestra marca. Eso constaba de productos e historia. De dónde venimos y quiénes somos ayuda a la gente a entender el porqué de lo que vendemos, es por eso que dediqué dos secciones de la página a contar eso. 
+   </h2>
+	<p> <img style="width: 600px; margin: 20px" src= "ima/Captura de pantalla 2024-11-13 114427.png"> </p>
+
+   </div>
+   </div>
+
+
+
+  <div class="diapositiva">
+
+  <div class="contenedor">
+
+   <h1>¿Por qué un sitio para atypical?</h1>
+
+   <h2>
+
+    Nuestro objetivo con la página es hacer conocida la marca y dar un acceso más cómodo a que los compradores puedan obtener los productos que proporcionamos. Nuestro público al igual que la página está dedicado a adolescentes especialmente que son quienes más consumen este estilo de prendas pero obviamente no tienen límites de edades ya que quien quiera puede usar nuestros productos. La temática que se buscó fue seguir algo no tan llamativo que quite protagonismo pero que siga la estética oscura de las prendas medio “rockeras”
+
+   </h2>
+
+  </div>
+
+  </div>
+
+  
+
+
+
+
+
+
+
+
+  <div class="diapositiva">
+
+   <img
+
+   style="width: 400px; margin: 20px"
+
+   src="ima/Logo final aty.jpeg"
+
+  />
+
+   <h1>inspeccionar pagina</h1>
+
+    <nav id="navegador" class=" ">
+
+    <ul>
+
+     <li><a href="https://matildebustos.github.io/matildebustoss.github.io/">CLICK PARA IR A LA PAGINA WEB</a></li>
+
+    </ul>
+
+   </nav>
+
+     </div>
+
+
+
+  <script type="text/javascript">
+
+   const diapositivas = document.querySelectorAll(".diapositiva");
+
+   let diapositivaActual = 0;
+
+   const tiempoTransicion = 1000000; // Tiempo en milisegundos entre diapositivas
+
+
+
+   function cambiarDiapositiva(n) {
+
+    diapositivas[diapositivaActual].classList.remove("activa");
+
+    diapositivaActual =
+
+     (diapositivaActual + n + diapositivas.length) % diapositivas.length;
+
+    diapositivas[diapositivaActual].classList.add("activa");
+
+   }
+
+
+
+   const botonAnterior = document.getElementById("anterior");
+
+   botonAnterior.addEventListener("click", () => {
+
+    cambiarDiapositiva(-1);
+
+   });
+
+
+
+   const botonSiguiente = document.getElementById("siguiente");
+
+   botonSiguiente.addEventListener("click", () => {
+
+    cambiarDiapositiva(1);
+
+   });
+
+
+
+   // Temporizador automático
+
+   setInterval(() => {
+
+    cambiarDiapositiva(1);
+
+   }, tiempoTransicion);
+
+  </script>
+
+ </body>
+
+</html>
+
+
+
+
+
+	
