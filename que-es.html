@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>que-es.html</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	 <nav class="navbar">
+     <a href="index.html" class="logo">Pop Art</a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="historia.html">Historia del Pop Art</a>
+            <a href="que-es.html">¿Qué es el Pop Art?</a>
+            <a href="obras.html">Obras Icónicas</a>
+            <a href="artistas.html">Artistas</a>
+            <a href="contacto.html">Contacto</a> 
+        </div>
+    </nav>
+	
+
+  <main class="content-wrapper">
+	  <main class="content-wrapper">
+		  <div class="page-title">
+    <h1>¿Qué es el Pop Art?</h1>
+  </div>
+
+  <!-- Galería arriba del texto -->
+  <section class="galeria-section">
+   
+    <div class="galeria">
+      <div class="imagen-galeria">
+        <img src="imagenes/ima1.jpg" alt="Descripción imagen 1">
+      </div>
+      <div class="imagen-galeria">
+        <img src="imagenes/ima3.webp" alt="Descripción imagen 2">
+      </div>
+      <div class="imagen-galeria">
+        <img src="imagenes/ima4.jpg" alt="Descripción imagen 3">
+      </div>
+		<div class="imagen-galeria">
+        <img src="imagenes/ima5.jpg" alt="Descripción imagen 2">
+      </div>
+		<div class="imagen-galeria">
+        <img src="imagenes/ima6.jpg" alt="Descripción imagen 2">
+      </div>
+    </div>
+  </section>
+
+  
+
+    <div class="content-section">
+      <p>
+        El Pop Art es un movimiento artístico que surge en la década de 1950 como una
+respuesta a la creciente influencia de la cultura de masas y la sociedad de
+consumo. Su filosofía se basa en la idea de que el arte no debe limitarse a los
+museos o a los círculos elitistas, sino que puede nutrirse de la vida cotidiana y de
+los medios de comunicación. Así, los artistas pop rompen con la tradición artística
+para incorporar elementos del mundo publicitario, el cómic, la televisión y el cine,
+desdibujando la línea entre el arte y la cultura popular.
+      </p>
+		<br>
+      <p>
+       Este movimiento busca expresar tanto una celebración como una crítica a la
+cultura de consumo. Por un lado, algunos artistas, como Andy Warhol, exaltan la
+repetición y la estética de los productos comerciales, reflejando el impacto de la
+producción en masa en la sociedad moderna. Por otro lado, figuras como Richard
+Hamilton o James Rosenquist utilizan imágenes publicitarias y figuras icónicas para
+cuestionar la superficialidad del consumo, el materialismo y la manipulación
+mediática. Además del consumismo, el Pop Art también explora temas como la
+identidad, la fama y la influencia de los medios en la percepción de la realidad.
+      </p>
+		<br>
+      <p>
+Para transmitir estos mensajes, los artistas pop emplean estrategias visuales
+llamativas y accesibles. La repetición y la serialización evocan la producción
+industrial y refuerzan la idea de la masificación de la cultura, como se observa en
+las famosas latas de sopa Campbell de Warhol. Los colores brillantes y
+contrastantes captan la atención del espectador y replican la estética de la
+publicidad. La apropiación de imágenes populares es otra característica esencial,
+con la reutilización de figuras de la cultura de masas, como estrellas de cine o
+personajes de cómics, ejemplificada en los retratos de Marilyn Monroe de Warhol o
+las viñetas ampliadas de Roy Lichtenstein. Además, el Pop Art rechaza la pincelada
+gestual del expresionismo abstracto y opta por técnicas mecánicas e impersonales,
+como la serigrafía y el collage, que imitan la producción comercial.
+      </p>
+		<br>
+      <p>
+       En conclusión, el Pop Art desafía las ideas tradicionales sobre el arte al incorporar
+elementos cotidianos y accesibles. Puede interpretarse tanto como una
+celebración del mundo moderno como una crítica a su superficialidad. Con una
+estética vibrante y reconocible, sus artistas transforman la cultura popular en arte,
+logrando que la sociedad se vea reflejada en sus obras y cuestionando la relación
+entre el arte y la vida cotidiana.
+      </p>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="#" class="social-icon">IG</a>
+    </div>
+    <p>Correo@ejemplo.com | © Saprel Pop Art</p>
+  </footer>
+	 <!-- Modal para ver imágenes grandes -->
+<div id="modal" class="modal">
+  <span class="cerrar" onclick="cerrarModal()">&times;</span>
+  <img class="modal-contenido" id="imgGrande">
+</div>
+	</main>
+	<script>
+  const imagenes = document.querySelectorAll(".imagen-galeria img");
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("imgGrande");
+
+  imagenes.forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  function cerrarModal() {
+    modal.style.display = "none";
+  }
+
+  // Cierra modal si se hace clic fuera de la imagen
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
+	

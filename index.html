@@ -1,89 +1,54 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Atypical</title>
-	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="Css.css">
-</head> 
+<meta charset="utf-8">
+<title>index.html</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
 
 <body>
-	<header>
-		<a href="#" class="icono" onClick="MiFuncion();"> <i class="fa fa-bars"></i></a>
-		<img src="ima/Logo final aty.jpeg" class="logo">
-		<nav id="navegador" class=" ">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="Productos.html">Productos</a></li>
-			<li><a href="Informacion de marca.html">Informacion de la marca</a></li>
-			<li><a href="Informacion de la fundadora.html">Informacion de la fundadora</a></li>
-          <li><a href="Contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-	</header>
-	
-	 <main>
-        <section class="brand-info">
-            <h1>NOVEDADES</h1>
-			<h2>Nuevos ingresos</h2>
-			
-			<div class="cajacon">
-			<div>
-			<p>Pantalon FADE!</p>
-			<br>	
-			<img src="ima/foto pantalon.jpeg" class="pant">
-			</div>
-				
-				<div>
-			<p>Pant lightning</p>
-			<br>
-			<img src="ima/pant lightening.jpeg" class="lighte">
-					</div>
-			</div>
-			
-			<iframe src="https://vickyhoffmann.github.io/Casa-Estudio/anuncio.html"  class="anuncio" name="marco" frameborder="0" scrolling="no"></iframe>
-			
-          
-        </section>
-    </main>
-	
-	
-	
-	
-	<footer>
 
-  	<div class="footer-container">
-   
-		
-	
-    <div class="footer-section">
-      <h4>Seguinos</h4>
-      <a href="https://www.instagram.com/at.ypical?igsh=MWcwazVzcDZiZ3kxNg==https://www.instagram.com/casaestudio_"> <p><i class="fa fa-instagram" aria-hidden="true"></i></p></a>
-    </div>
-		<div class= "quick-links"></div>
-		<a href="presentacion.html" class="link"> Presentacion </a>
-    <div class="footer-section">
-      <p>© Atypical - Todos los derechos reservados</p>
-    </div>
-  </div>
-	</footer>
-	
-	<script> 
-		function MiFuncion() {
-     	var x = document.getElementById("navegador");
-			if (x.className === " ") {
-			x.className += "responsive";
-     } else {
-       x.className = " ";
-     }
-   }
-	</script>
-	
 
-	
-	
+    <!-- Barra de navegación fija -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Pop Art</a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="historia.html">Historia del Pop Art</a>
+            <a href="que-es.html">¿Qué es el Pop Art?</a>
+            <a href="obras.html">Obras Icónicas</a>
+            <a href="artistas.html">Artistas</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <section class="hero">
+        <div class="comic-grid">
+            <div class="comic-box red">
+                <div class="comic-bubble">
+                    <h2>El arte popular como revolución estética</h2>
+                </div>
+            </div>
+            <div class="comic-box yellow">
+                <img src="imagenes/muje lloano.jpg" alt="Retrato mujer estilo Pop Art" class="comic-portrait">
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones de acción -->
+    <div class="action-buttons">
+        <a href="historia.html" class="action-button">Conoce su historia</a>
+        <a href="obras.html" class="action-button red">Obras icónicas</a>
+        <a href="artistas.html" class="action-button blue">Artistas</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-icon">IG</a>
+        </div>
+        <p>Correo@ejemplo.com | © Saprel Pop Art</p>
+    </footer>
 </body>
 </html>
